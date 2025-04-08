@@ -60,6 +60,7 @@ svg {
   height: 919px;
 }
 .dash-header {
+  padding-top: 10px;
   height: 180px;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -101,9 +102,17 @@ svg {
 }
 .header-top-right {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 200px;
   justify-items: center;
   align-items: center;
+}
+.header-top-right .icon {
+  justify-self: end;
+}
+.user-name {
+  font-size: 18px;
+  font-weight: 700;
+  justify-self: start;
 }
 .header-bottom-left {
   display: grid;
@@ -143,26 +152,42 @@ svg {
   height: auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 30px 30px 0px 30px;
+  padding: 20px 30px 0px 30px;
 }
 .content-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
 }
 .dash-content h2 {
   font-size: 1.3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .project {
   border-left: 8px solid rgb(226, 173, 0);
   padding: 30px;
   display: grid;
-  justify-items: center;
+  justify-self: start;
   height: 140px;
   width: 300px;
   border-radius: 8px;
   background-color: white;
   box-shadow: 2px 2px 6px rgb(179, 179, 179);
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.action-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  align-self: center;
+  justify-self: end;
+}
+
+.project p {
+  color: rgb(121, 121, 121);
 }
 .content-right {
   display: grid;
@@ -173,7 +198,7 @@ svg {
   padding: 30px;
   display: grid;
   justify-items: center;
-  height: 250px;
+  height: 240px;
   width: 200px;
   border-radius: 10px;
   background-color: white;
@@ -181,10 +206,12 @@ svg {
 }
 .content-top div {
   width: 200px;
-  height: 90px;
+  height: 80px;
   font-size: 12px;
+  align-self: center;
 }
 .content-top div p {
+  color: rgb(121, 121, 121);
   width: 200px;
   font-size: 12px;
   white-space: nowrap;
@@ -192,33 +219,43 @@ svg {
   text-overflow: ellipsis;
 }
 .content-top div h3 {
-  font-size: 12px;
+  font-size: 13px;
 }
 .content-bottom {
-  padding: 30px;
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  height: 250px;
-  width: 200px;
+  height: 300px;
+  width: 260px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 2px 2px 6px rgb(179, 179, 179);
 }
 .content-bottom div {
-  width: 200px;
-  height: 90px;
+  align-self: center;
   font-size: 12px;
 }
 .mid-item {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid rgb(224, 224, 224);
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
-.content-bottom div p {
-  font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 .content-bottom div h3 {
   font-size: 12px;
+}
+.content-bottom div p {
+  color: rgb(121, 121, 121);
+  font-size: 13px;
+}
+.trending-user {
+  height: max-content;
+  width: 260px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.trending-user .profile-picture-small {
+  justify-self: center;
+}
+.trending-item {
+  align-items: center;
 }
