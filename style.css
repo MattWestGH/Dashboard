@@ -1,0 +1,224 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+body {
+  background-color: rgb(222, 228, 231);
+}
+#main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.left-menu {
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 174, 255);
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+  padding: 0px 80px 0px 30px;
+}
+.left-icon {
+  fill: white;
+}
+.icon {
+  height: 26px;
+  width: 26px;
+}
+.left-logo {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  height: 50px;
+  padding: 25px 0px 0px 0px;
+}
+.left-menu-item {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  height: 50px;
+  padding: 0px 0px 0px 12px;
+}
+.left-menu-item a {
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.left-menu-item a:visited {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+svg {
+  height: 26px;
+  width: 26px;
+}
+.dash-main {
+  height: 919px;
+}
+.dash-header {
+  height: 180px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  box-shadow: 1px 0px 10px gray;
+  background-color: white;
+}
+.search-bar {
+  margin-left: 50px;
+  height: 30px;
+  width: 700px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(216, 224, 231);
+}
+.search-bar:focus {
+  outline: none;
+}
+.profile-picture-small {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.profile-picture-large {
+  justify-self: end;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.header-top-left {
+  display: grid;
+  grid-template-columns: 70px 750px;
+  justify-items: center;
+  align-items: center;
+}
+.header-top-left .icon {
+  justify-self: end;
+}
+.header-top-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+}
+.header-bottom-left {
+  display: grid;
+  grid-template-columns: 120px 4fr;
+  justify-items: center;
+  align-items: center;
+}
+.greeting {
+  font-weight: 600;
+}
+.user-greeting {
+  padding-left: 40px;
+  justify-self: start;
+}
+.user-greeting h3 {
+  font-size: 25px;
+}
+.user-actions {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 35px;
+}
+
+.user-actions button {
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: rgb(0, 146, 190);
+  border-radius: 50px;
+}
+.dash-content {
+  height: auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 30px 30px 0px 30px;
+}
+.content-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.dash-content h2 {
+  font-size: 1.3em;
+}
+.project {
+  border-left: 8px solid rgb(226, 173, 0);
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  height: 140px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 2px 2px 6px rgb(179, 179, 179);
+}
+.content-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-self: end;
+}
+.content-top {
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  height: 250px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 6px rgb(179, 179, 179);
+}
+.content-top div {
+  width: 200px;
+  height: 90px;
+  font-size: 12px;
+}
+.content-top div p {
+  width: 200px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content-top div h3 {
+  font-size: 12px;
+}
+.content-bottom {
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  height: 250px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 6px rgb(179, 179, 179);
+}
+.content-bottom div {
+  width: 200px;
+  height: 90px;
+  font-size: 12px;
+}
+.mid-item {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.content-bottom div p {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content-bottom div h3 {
+  font-size: 12px;
+}
